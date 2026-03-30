@@ -1,0 +1,114 @@
+/* --- 1. 基礎重設與共用樣式 --- */
+body { 
+    line-height: 1.6; 
+    margin: 0; 
+    padding: 0; 
+    background-color: #ffffff; 
+}
+
+.hero { 
+    height: 100vh; 
+    color: white; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    background: #ff8200; 
+}
+
+footer { 
+    height: 600px; 
+    background: #333; 
+    color: #888; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+/* --- 2. 頁籤容器佈局 --- */
+.tab-container { 
+    width: 90%; 
+    max-width: 800px; 
+    margin: 30px auto; 
+    background: #fff; 
+    overflow: hidden; 
+    
+}
+
+.tab-menu { 
+    display: flex; 
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+    background: #eee; 
+    align-items: stretch; 
+}
+
+.tab-menu li { 
+    flex: 1; 
+    display: flex;
+    background: #ffffff;
+}
+
+.tab-menu li a { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    flex: 1;
+    padding: 15px 10px; 
+    text-align: center; 
+    text-decoration: none; 
+    color: #666; 
+    font-weight: bold; 
+    transition: 0.3s; 
+    
+
+    border-bottom: 4px solid transparent; 
+    box-sizing: border-box; 
+}
+
+.tab-menu li a:hover {
+    color: #ff8200;
+}
+
+/* --- 3. 啟動狀態 (Active States) --- */
+.tab-menu li.active-a a,
+.tab-menu li.active-b a { 
+    color: #ff8200 !important; 
+    border-bottom: 4px solid #ff8200 !important;
+    background: #fff !important;
+}
+
+/* --- 4. 內容區塊 --- */
+.tab-content { 
+    padding: 60px 30px; 
+    min-height: 500px; 
+    text-align: center; 
+}
+
+/* .btn { 
+    padding: 15px 30px; 
+    font-size: 18px; 
+    cursor: pointer; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    background: #ff8200;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
